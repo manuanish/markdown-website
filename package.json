@@ -1,0 +1,16 @@
+{
+  "name": "markdown-website",
+  "version": "1.0.0",
+  "description": "Website created using markdown",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "author": "Manu Anish",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "socket.io": "^4.2.0"
+  }
+}
