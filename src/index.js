@@ -6,6 +6,10 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 const fs = require('fs');
 
+// PORT
+const port = 3000;
+
+
 var data = fs.readFileSync(__dirname + '/static/index.md', 'utf8')
 
 
@@ -20,14 +24,18 @@ io.on('connection', (socket) => {
   socket.emit("page_data", data);
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
-});
 
+// Watch for changes in the file
 fs.watch(__dirname + '/static/index.md', function (event, filename) {
     if (filename) {
         var data = fs.readFileSync(__dirname + '/static/index.md', 'utf8')
         io.emit("page_data", data);
     } else {
     }
+});
+
+
+// Change Port Here
+server.listen(port, () => {
+  console.log('listening on *:' + port);
 });
