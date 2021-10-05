@@ -1,5 +1,5 @@
 # **markdown-website**
-A simple example of creating a localhost website using markdown. This project does not use [Jekyll](https://github.com/jekyll/jekyll), written in `Ruby`, but instead uses `NodeJS` to run.
+A simple example of creating a localhost website using markdown. This project does not use [Jekyll](https://github.com/jekyll/jekyll), written in `Ruby`, but instead uses `NodeJS` to run. Check out a *live* example hosted at: https://manuanish.github.io/markdown-website/
 
 ----
 
