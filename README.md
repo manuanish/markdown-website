@@ -7,7 +7,7 @@ A simple example of creating a localhost website using markdown. This project do
 #### Cloning Repository
 To clone the repository, run the command:
 ```
-git clone *link*
+git clone https://github.com/manuanish/markdown-website.git
 cd markdown-website
 ```
 #### Install dependencies
